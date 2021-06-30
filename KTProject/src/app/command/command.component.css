@@ -1,0 +1,86 @@
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.maincontainer{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    color: #615f5f;
+    background-color: #E5E5E5;
+}
+.commandhead{
+    display: flex;
+    padding: 10px;
+    text-decoration: underline;
+    text-decoration-color: dodgerblue;
+    color: dodgerblue;
+}
+.commanddetail{
+    display: flex;
+    flex-direction: column;
+}
+
+.set{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 15px ;
+}
+.ping, .detail{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px solid #bfb7b7;
+    /* border-radius: 10px; */
+    background-color: white;
+    padding: 10px;
+
+}
+.ping form {
+    display: flex;
+    flex-direction: column;
+}
+.detail form {
+    display: flex;
+    flex-direction: column;
+}
+form select{
+    outline: none !important;
+    height: 30px;
+}
+form input{
+    outline: none !important;
+}
+
+.detail button {
+    width: fit-content;
+    border: 1px solid #bfb7b7;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #615f5f;
+
+}
+.ping button{
+    width: fit-content;
+    border: 1px solid #bfb7b7;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #615f5f;
+
+}
+
+@media (max-width: 460px){
+    .set{
+        flex-direction: column;
+    }
+    .ping, .detail{
+        width: auto;
+        margin-bottom: 8px;
+    }
+}

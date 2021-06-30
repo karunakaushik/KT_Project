@@ -1,0 +1,11 @@
+.navbar-brand{
+    /* background-color: teal; */
+    color: white;
+    font-weight: bold;
+}
+.navbar{
+    background-color:sandybrown;
+}
+.form-control{
+    outline: none !important;
+}

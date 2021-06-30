@@ -1,0 +1,45 @@
+<div class="photographs">
+    <div class="innerdiv">
+        <carousel [images]="images">
+
+        </carousel>
+    </div>
+    <div>
+        <ul *ngFor = "let data of httpdata">
+            <li> Name : {{data.name}}, Address: {{data.address.city}} </li>
+        </ul>
+    </div>
+
+     <p> {{todaydate}}</p>
+    
+    <div class="cards">
+             
+        <div class="carddiv">
+            <img src="../../assets/image/c8.jpg" />
+            <img src="../../assets/image/c1.jpg" />
+   
+            <img src="../../assets/image/c2.jpg" />
+        </div>
+
+        <div class="carddiv">
+            <img src="../../assets/image/c6.jpg" /> 
+            <img src="../../assets/image/c10.jpg" />
+            <img src="../../assets/image/c5.jpg" />
+           
+        </div>
+        
+        <div class="carddiv">
+            <img src="../../assets/image/c3.jpg" />
+            <img src="../../assets/image/c7.jpg" />
+            <img src="../../assets/image/m1.jpg" />
+        </div>
+
+
+        <div class="carddiv">
+            <img src="../../assets/image/c9.jpg" />
+            <img src="../../assets/image/c4.jpg" />
+            <img src="../../assets/image/t1.webp" />
+        </div>
+        
+    </div>
+</div>
