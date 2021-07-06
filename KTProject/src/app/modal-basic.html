@@ -1,0 +1,46 @@
+<ng-template #content let-modal >
+    <div style="padding: 10px">
+        <div class="modal-header" style="background-color: blue; border: 1px solid blue; color: white;">
+            <h4 class="modal-title" id="modal-basic-title">Command Setting</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')" style="background: none; border: none; color: white;">
+                <span aria-hidden="true">&#215;</span>
+                <!-- X -->
+            </button>
+        </div>
+        <div class="modal-body" style="border: 1px solid blue;display: flex; align-items: center; justify-content: center; ">
+            <form>
+                <div class="form-group" style="display: flex; flex-direction: row; align-items: baseline;">
+                    <div style="display: flex;  flex-direction: column ">
+                        <label> Select Meter Type</label>
+                        <br />
+                        <label>Set Address</label>
+                    </div>
+                    <!-- <br /> -->
+                    &nbsp;
+                    <div style="display: flex;  flex-direction: column">
+
+                        <select name="relay" id="relays" style="outline: none; height: 35px;">
+                            <option value="">Select Meter Type</option>
+                            <option value="EM368">EM368</option>
+                            <option value="EM642">EM642</option>
+                        </select>
+                        <br />
+                        <input type="text" placeholder="For eg: 1, 2, 3 or ..." style="outline: none;" />
+                    </div>
+                    <!-- <br /> -->
+                </div>
+
+                <button type="submit" style="background-color: white; border: 1px solid gray; border-radius: 3px;">Submit</button>
+            </form>
+        </div>
+        <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+        </div> -->
+    </div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Demo modal</button>
+
+<hr>
+
+<!-- <pre>{{ closeResult }}</pre> -->

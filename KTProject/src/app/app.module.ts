@@ -11,6 +11,8 @@ import { TestService } from './test.service';
 import { HttpModule } from '@angular/http';
 import { WtdetailsComponent } from './wtdetails/wtdetails.component';
 import { CommandComponent } from './command/command.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdModalBasic } from './modal-basic';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { CommandComponent } from './command/command.component';
     HomeComponent,
     DetailComponent,
     WtdetailsComponent,
-    CommandComponent
+    CommandComponent,
+    NgbdModalBasic
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AnimateOnScrollModule.forRoot(),
     IvyCarouselModule,
+    NgbModule,
     HttpModule
 
   ],
